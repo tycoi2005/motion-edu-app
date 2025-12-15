@@ -1,17 +1,12 @@
-/**
- * Gesture type definitions for the motion-based flashcard app.
- */
+// frontend/src/cv/gestureTypes.ts
 
+// A simple string union type for gestures
 export type GestureType = "REST" | "NEXT" | "PREV" | "SELECT";
 
+// All gestures in an array (useful for debugging or dropdowns)
 export const ALL_GESTURES: GestureType[] = ["REST", "NEXT", "PREV", "SELECT"];
 
-/**
- * Get a human-readable label for a gesture type.
- * 
- * @param gesture - The gesture type
- * @returns A formatted label string
- */
+// Pretty labels for UI
 export function getGestureLabel(gesture: GestureType): string {
   switch (gesture) {
     case "REST":
@@ -26,4 +21,3 @@ export function getGestureLabel(gesture: GestureType): string {
       return gesture;
   }
 }
-
