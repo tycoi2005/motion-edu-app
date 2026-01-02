@@ -235,7 +235,7 @@ function showTestQuestion() {
     const rightCard = question.correctPosition === 'right' ? question.correctCard : question.incorrectCard;
 
     document.getElementById('testCategory').textContent = currentCategory;
-    document.getElementById('testQuestion').textContent = `Berühre ${question.german}`;
+    document.getElementById('testQuestion').textContent = `${question.german}`;
     document.getElementById('testProgress').textContent = `Question ${currentTestIndex + 1} of ${testQuestions.length}`;
 
     document.getElementById('leftImage').src = leftCard.image_url || leftCard.image_local;
